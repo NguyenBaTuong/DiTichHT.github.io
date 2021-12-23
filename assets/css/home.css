@@ -17,7 +17,6 @@
     align-items: center;
     text-decoration: none;
     color: #fff;
-    /* background: #fff; */
     height: 100%;
     border-radius: 4px;
 }
@@ -31,8 +30,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px; */
     border-radius: 4px;
 }
 
@@ -84,5 +81,4 @@
 
 .home__relics-item-ac-btn:hover {
     background: #5b0281;
-
 }
