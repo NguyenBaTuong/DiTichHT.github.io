@@ -9,13 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./assets/css/root.css">
 </head>
 <body>
     <div class="root grid">
         <div class="root__header-block">
             <div class="root__nav">
-                <div class="root__nav-bread">Trang chủ</div>
+                <ul class="root__nav-list">
+                    <li class="root__nav-item">
+                        <a href="#" class="root__nav-link"><span>Cổng thông tin</span></a>
+                    </li>
+                    <li class="root__nav-item">
+                        <a href="#" class="root__nav-link"><span>Điều hành tác nghiệp</span></a>
+                    </li>
+                    <li class="root__nav-item">
+                        <a href="#" class="root__nav-link"><span>Hỗ trợ</span></a>
+                    </li>
+                    <li class="root__nav-item">
+                        <a href="#" class="root__nav-link"><span>UBND tỉnh Hà Tĩnh</span></a>
+                    </li>
+                </ul>
                 <ul class="root__nav-list">
                     <li class="root__nav-item">
                         <a href="#" class="root__nav-link"><span>Thông tin</span></a>
@@ -33,7 +47,7 @@
                         <a href="#" class="root__nav-link"><span>Liên hệ</span></a>
                     </li>
                 </ul>
-            </div>
+            </div> 
             <div class="root__header">
                 <div class="root__header-left">
                     <div class="root__navmobi">
@@ -118,27 +132,32 @@
                         <!-- <div class="modal">
                         </div> -->
                     </div>
-                    <a href="./index.html" class="root__header-logo">
-                        <img src="./assets/libs/img/file_vector_-_logo_di_tich_3.svg" alt="" class="root__header-logo-img">
-                    </a>
+                    <div class="root__header-hot">
+                        <h2 class="root__header-hot-title">Quản lý Di Tích</h2>
+                        <h3 class="root__header-hot-desc">Sở văn hóa - Thể thao - Du lịch Hà Tĩnh</h3>
+                    </div>
                     <div class="root__header-search">
-                        <input type="text" class="root__header-search-input" placeholder="Tìm kiếm...">
-                        <button class="root__header-search-btn">Tìm kiếm</button>
+                        <button class="root__header-search-btn"><i class="fal fa-search"></i></button>
+                        <input type="text" class="root__header-search-input" placeholder="Bạn muốn tìm gì...">
                     </div>
                 </div>
                 <div class="root__header-ac">
-                    <div class="root__header-ac-on">
-                        <a class="root__header-ac-btn">
-                            <i class="fal fa-user-plus"></i>
-                            <span>Đăng nhập</span>
-                        </a>
-                        <a class="root__header-ac-btn">
-                            <i class="fal fa-user-lock"></i>
-                            <span>Đăng ký</span>
-                        </a>
-                    </div>
+                    <ul class="root__header-list">
+                        <li class="root__header-item">
+                            <a href="" class="root__header-link"><span>Tin tức</span></a>
+                        </li>
+                        <li class="root__header-item">
+                            <a href="" class="root__header-link"><span>Hoạt động</span></a>
+                        </li>
+                        <li class="root__header-item">
+                            <a href="" class="root__header-link"><span>Đặt lịch</span></a>
+                        </li>
+                    </ul>
+                    <button class="root__header-ac-btn btn">
+                        <img src="./assets/libs/img/user.png" alt="">
+                        <span>Tài khoản</span>
+                    </button>
                 </div>
-
             </div>
         </div>
         <div class="root__body">
@@ -146,303 +165,556 @@
                 <ul class="root__sildebar-menu">
                     <li class="root__sildebar-menu-list">
                         <a href="./index.html" class="root__sildebar-menu-link active">
-                            <i class="fal fa-book"></i>
-                            <span>Di tích</span>
+                            <img src="./assets/libs/img/forbidden-city.png" alt="">
+                            <span>Danh sách di tích</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="./assets/components/festival.html" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Lễ hội</span>
+                             <img src="./assets/libs/img/paper-lantern.png" alt="">
+                            <span>Lễ hội văn hóa</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
+                             <img src="./assets/libs/img/vase.png" alt="">
                             <span>Hiện vật</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Nhân vật</span>
+                             <img src="./assets/libs/img/cpu-tower.png" alt="">
+                            <span>Nhân vật được thờ</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="root__sildebar-menu-list">
+                        <a href="" class="root__sildebar-menu-link">
+                             <img src="./assets/libs/img/star.png" alt="">
+                            <span>Xếp hạng di tích</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Xếp hạng</span>
+                             <img src="./assets/libs/img/presentation.png" alt="">
+                            <span>Thống kê di tích</span>
                         </a>
                     </li>
-                    <div class="root__sildebar-menu-sep"></div>
+                    <hr>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Lý lịch di tích</span>
+                             <img src="./assets/libs/img/location.png" alt="">
+                            <span>Địa điểm di tích</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Địa điểm</span>
-                        </a>
-                    </li>
-                    <div class="root__sildebar-menu-sep"></div>
-                    <li class="root__sildebar-menu-list">
-                        <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
+                             <img src="./assets/libs/img/monitor.png" alt="">
                             <span>Thư viện ảnh</span>
                         </a>
                     </li>
                     <li class="root__sildebar-menu-list">
                         <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Thống kê</span>
-                        </a>
-                    </li>
-                    <li class="root__sildebar-menu-list">
-                        <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Tài liệu</span>
-                        </a>
-                    </li>
-                    <div class="root__sildebar-menu-sep"></div>
-                    <li class="root__sildebar-menu-list">
-                        <a href="" class="root__sildebar-menu-link">
-                            <i class="fal fa-book"></i>
-                            <span>Người dùng</span>
+                             <img src="./assets/libs/img/calligraphy.png" alt="">
+                            <span>Hồ sơ di lích</span>
                         </a>
                     </li>
                 </ul>
+                <div class="root__sildebar-note-block">
+                    <div class="root__sildebar-note">
+                        <div class="root__sildebar-note-ac">
+                            <i class="fal fa-times"></i>
+                        </div>
+                        <div class="root__sildebar-note-header">
+                            <img src="./assets/libs/img/note.png" alt="">
+                            <span>Ghi chú</span>
+                        </div>
+                        <div class="root__sildebar-note-desc">
+                            Hệ thống quản lý di tích được vận hành bởi sở Văn Hóa - Thể Thao - Du lịch tỉnh Hà Tĩnh. Nếu bạn gặp vấn đề về sử dụng, xin vui lòng xem: <a href="#">Hướng dẫn sử dụng</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="root__content-block">
                <div class="root__content">
                    <!-- content page  -->
-                   <div class="home">
-                       <div class="home__relics">
-                           <div class="home__relics-item">
-                               <a href="#" class="home__relics-link">
-                                   <div class="home__relics-item-media">
-                                       <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                   </div>
-                                   <div class="home__relics-item-content">
-                                       <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                       <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-clock"></i>
-                                            23/12/2021
-                                       </h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-map-marked-alt"></i>
-                                            Mai Phụ - Lộc Hà - Hà Tĩnh.
-                                       </h3>
-                                       <p class="home__relics-item-desc">
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                       </p>
-                                       <div class="home__relics-item-ac">
-                                           <button class="home__relics-item-ac-btn btn">Xem di tích</button>
+                   <div class="home grid">
+                       <div class="home__header-block">
+                           <div class="home__header row">
+                               <div class="home__header-i4-block col l-6 m-6 c-12">
+                                   <div class="home__header-i4">
+                                       <div class="home__header-i4-media">
+                                           <img src="./assets/libs/img/forbidden-city.png" alt="">
+                                       </div>
+                                       <div class="home__header-i4-content">
+                                           <h1 class="home__header-i4-title">Di tích Lịch Sử Hà Tĩnh</h1>
+                                           <p class="home__header-i4-num">Tổng 3.560 di tích</p>
                                        </div>
                                    </div>
-                               </a>
+                               </div>
+                               <div class="home__header-ac-block col l-6 m-6 c-12">
+                                   <div class="home__header-ac">
+                                        <span>Quảng cáo & Tuyên truyền</span>
+                                   </div>
+                               </div>
                            </div>
-                           <div class="home__relics-item">
-                               <a href="#" class="home__relics-link">
-                                   <div class="home__relics-item-media">
-                                       <img src="https://edu.viettel.vn/upload/64504/20190705/grab64d7d120209_hanthienhai07.jpg" alt="">
+                       </div>
+                       <div class="home__box row">
+                           <div class="home__relics-block col l-9 m-8 c-12">
+                            <div class="home__filter">
+                                <div class="home__filter-list">
+                                    <div class="home__filter-item">
+                                        <img src="./assets/libs/img/menu.png" alt="" class="home__filter-item-img">
+                                        <select class="home__filter-item-select">
+                                            <option value="0">Danh mục:</option>
+                                            <option value="1">Lễ hội</option>
+                                            <option value="2">Nhân vật</option>
+                                        </select>
+                                    </div>
+                                    <div class="home__filter-item">
+                                        <img src="./assets/libs/img/location.png" alt="" class="home__filter-item-img">
+                                        <select class="home__filter-item-select">
+                                            <option value="0">Khu vực:</option>
+                                            <option value="1">TP Hà Tĩnh</option>
+                                            <option value="2">Lộc Hà</option>
+                                        </select>
+                                    </div>
+                                    <div class="home__filter-item">
+                                        <img src="./assets/libs/img/star.png" alt="" class="home__filter-item-img">
+                                        <select class="home__filter-item-select">
+                                            <option value="0">Xếp hạng:</option>
+                                            <option value="1">Lễ hội</option>
+                                            <option value="2">Nhân vật</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="home__filter-add">
+                                    <span>Thêm mới</span>
+                                    <img src="./assets/libs/img/plus.png" alt="">
+                                </button>
+                            </div>
+                               <div class="home__relics">
+                                   <div class="home__relics-item">
+                                       <a href="#" class="home__relics-link">
+                                           <div class="home__relics-item-media">
+                                               <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                           </div>
+                                           <div class="home__relics-item-content">
+                                               <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                               <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                               <p class="home__relics-item-desc compact">
+                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                               </p>
+                                               <div class="home__relics-item-ac">
+                                                   <div class="home__relics-item-ac-list">
+                                                       <div class="home__relics-item-ac-it tooltip">
+                                                           <img src="./assets/libs/img/star.png" alt="">
+                                                           <span>Di tích quốc gia</span>
+                                                           <div class="ttip">Xếp hạng</div>
+                                                       </div>
+                                                       <div class="home__relics-item-ac-it tooltip">
+                                                           <img src="./assets/libs/img/folder.png" alt="">
+                                                           <span>32 Tập tin</span>
+                                                           <div class="ttip">Thư viện</div>
+                                                       </div>
+                                                       <div class="home__relics-item-ac-it tooltip">
+                                                           <img src="./assets/libs/img/insurance.png" alt="">
+                                                           <span>Huyện Thạch Hà</span>
+                                                           <div class="ttip">Địa điểm</div>
+                                                       </div>
+                                                   </div>
+                                                   <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                               </div>
+                                           </div>
+                                       </a>
                                    </div>
-                                   <div class="home__relics-item-content">
-                                       <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                       <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-clock"></i>
-                                            23/12/2021
-                                       </h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-map-marked-alt"></i>
-                                            Mai Phụ - Lộc Hà - Hà Tĩnh.
-                                       </h3>
-                                       <p class="home__relics-item-desc">
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                       </p>
-                                       <div class="home__relics-item-ac">
-                                           <button class="home__relics-item-ac-btn btn">Xem di tích</button>
-                                       </div>
-                                   </div>
-                               </a>
+                                   <div class="home__relics-item">
+                                    <a href="#" class="home__relics-link">
+                                        <div class="home__relics-item-media">
+                                            <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                        </div>
+                                        <div class="home__relics-item-content">
+                                            <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                            <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                            <p class="home__relics-item-desc compact">
+                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                            </p>
+                                            <div class="home__relics-item-ac">
+                                                <div class="home__relics-item-ac-list">
+                                                    <div class="home__relics-item-ac-it tooltip">
+                                                        <img src="./assets/libs/img/star.png" alt="">
+                                                        <span>Di tích quốc gia</span>
+                                                        <div class="ttip">Xếp hạng</div>
+                                                    </div>
+                                                    <div class="home__relics-item-ac-it tooltip">
+                                                        <img src="./assets/libs/img/folder.png" alt="">
+                                                        <span>32 Tập tin</span>
+                                                        <div class="ttip">Thư viện</div>
+                                                    </div>
+                                                    <div class="home__relics-item-ac-it tooltip">
+                                                        <img src="./assets/libs/img/insurance.png" alt="">
+                                                        <span>Huyện Thạch Hà</span>
+                                                        <div class="ttip">Địa điểm</div>
+                                                    </div>
+                                                </div>
+                                                <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="#" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="#" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="#" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="#" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="home__relics-item-ac-btn btn">Chi tiết</button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                            </div>
-                           <div class="home__relics-item">
-                               <a href="#" class="home__relics-link">
-                                   <div class="home__relics-item-media">
-                                       <img src="https://edu.viettel.vn/upload/64504/20190705/grabbb43b120209_hanthienhai13.jpg" alt="">
-                                   </div>
-                                   <div class="home__relics-item-content">
-                                       <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                       <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-clock"></i>
-                                            23/12/2021
-                                       </h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-map-marked-alt"></i>
-                                            Mai Phụ - Lộc Hà - Hà Tĩnh.
-                                       </h3>
-                                       <p class="home__relics-item-desc">
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                       </p>
-                                       <div class="home__relics-item-ac">
-                                           <button class="home__relics-item-ac-btn btn">Xem di tích</button>
-                                       </div>
-                                   </div>
-                               </a>
-                           </div>
-                           <div class="home__relics-item">
-                               <a href="#" class="home__relics-link">
-                                   <div class="home__relics-item-media">
-                                       <img src="https://danviet.mediacdn.vn/upload/1-2019/images/2019-03-18/5-danh-tuong-tai-gioi-nhat-lich-su-Viet-Nam-649-1552894512-width480height251.jpg" alt="">
-                                   </div>
-                                   <div class="home__relics-item-content">
-                                       <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                       <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-clock"></i>
-                                            23/12/2021
-                                       </h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-map-marked-alt"></i>
-                                            Mai Phụ - Lộc Hà - Hà Tĩnh.
-                                       </h3>
-                                       <p class="home__relics-item-desc">
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                       </p>
-                                       <div class="home__relics-item-ac">
-                                           <button class="home__relics-item-ac-btn btn">Xem di tích</button>
-                                       </div>
-                                   </div>
-                               </a>
-                           </div>
-                           <div class="home__relics-item">
-                               <a href="#" class="home__relics-link">
-                                   <div class="home__relics-item-media">
-                                       <img src="https://genk.mediacdn.vn/2019/6/16/photo-1-1560668322516527036640.jpg" alt="">
-                                   </div>
-                                   <div class="home__relics-item-content">
-                                       <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                       <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-clock"></i>
-                                            23/12/2021
-                                       </h3>
-                                       <h3 class="home__relics-item-text">
-                                            <i class="fal fa-map-marked-alt"></i>
-                                            Mai Phụ - Lộc Hà - Hà Tĩnh.
-                                       </h3>
-                                       <p class="home__relics-item-desc">
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                           Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                       </p>
-                                       <div class="home__relics-item-ac">
-                                           <button class="home__relics-item-ac-btn btn">Xem di tích</button>
-                                       </div>
-                                   </div>
-                               </a>
-                           </div>
+                           <div class="home__other-block col l-3 m-4 c-12">
+                                <div class="home__other">
+                                    <div class="home__other-header">
+                                        <img src="./assets/libs/img/paper-lantern.png" alt="" class="home__other-header-img">
+                                        <div class="home__other-header-content">
+                                            <h2 class="home__other-header-title">Lễ hội</h2>
+                                            <p class="home__other-header-desc">Danh sách sắp diễn ra</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__other-list">
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__other-ac">
+                                            <a href="#" class="home__other-ac-btn">Xem thêm</a>
+                                        </div>
+                                </div>
+                                <div class="home__other">
+                                    <div class="home__other-header">
+                                        <img src="./assets/libs/img/customer-review.png" alt="" class="home__other-header-img">
+                                        <div class="home__other-header-content">
+                                            <h2 class="home__other-header-title">Hoạt động</h2>
+                                            <p class="home__other-header-desc">Tương tác trên trang</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__other-list">
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__other-ac">
+                                        <a href="#" class="home__other-ac-btn">Xem thêm</a>
+                                    </div>
+                                </div>
+                                <div class="home__other">
+                                    <div class="home__other-header">
+                                        <img src="./assets/libs/img/quill.png" alt="" class="home__other-header-img">
+                                        <div class="home__other-header-content">
+                                            <h2 class="home__other-header-title">Tin tức</h2>
+                                            <p class="home__other-header-desc">Về di tích & Văn hóa</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__other-list">
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="home__other-item">
+                                            <div class="home__other-item-box">
+                                                <div class="home__other-item-media">
+                                                    <img src="https://vannghetiengiang.vn/uploads/news/2012_10/hung-vuong.jpg" alt="">
+                                                </div>
+                                                <div class="home__other-item-content">
+                                                    <h3 class="home__other-item-title compact">Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều Chào em anh đứng đây từ chiều</h3>
+                                                    <p class="home__other-item-desc compact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas blanditiis, ratione dignissimos officia ipsa perspiciatis amet veniam, placeat est unde maxime similique quasi ducimus soluta eveniet iusto beatae iste!</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__other-ac">
+                                        <a href="#" class="home__other-ac-btn">Xem thêm</a>
+                                    </div>
+                                </div>
+                                <div class="home__other">
+                                    <div class="home__other-header">
+                                        <img src="./assets/libs/img/quill.png" alt="" class="home__other-header-img">
+                                        <div class="home__other-header-content">
+                                            <h2 class="home__other-header-title">Thư viện ảnh</h2>
+                                            <p class="home__other-header-desc">Về di tích & Văn hóa</p>
+                                        </div>
+                                    </div>
+                                    <div class="home__other-media row">
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="home__other-media-item-block col l-4 m-6 c-4">
+                                            <div class="home__other-media-item">
+                                                <img src="https://i.pinimg.com/564x/4a/56/02/4a56024bb71ffcb97603341b22e3cff4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="home__other-ac">
+                                        <a href="#" class="home__other-ac-btn">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
                        </div>
                    </div>
                    <!-- content page  -->
                </div>
             </div>
-            <div class="root__section">
-                <div class="root__section-news">
-                    <h2 class="root__section-title">Tin tức</h2>
-                    <div class="root__section-news-list">
-                        <a href="#" class="root__section-news-item">
-                            <div class="root__section-news-item-media">
-                                <img src="https://lh5.googleusercontent.com/-GoBGvW0t48w/TzKZ1Yhd15I/AAAAAAAAJKA/MIdmnDyOw4c/s390/120209_hanthienhai12.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-news-item-contet">
-                                <h3 class="root__section-news-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-news-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                            </div>
-                        </a>
-                        <a href="#" class="root__section-news-item">
-                            <div class="root__section-news-item-media">
-                                <img src="https://lh3.googleusercontent.com/-aAvXbhsL504/TzKZzA9U4II/AAAAAAAAJJo/TD7E5Mr5b4g/120209_hanthienhai09.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-news-item-contet">
-                                <h3 class="root__section-news-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-news-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                            </div>
-                        </a>
-                        <a href="#" class="root__section-news-item">
-                            <div class="root__section-news-item-media">
-                                <img src="https://edu.viettel.vn/upload/64504/20190705/grab0bade120209_hanthienhai43.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-news-item-contet">
-                                <h3 class="root__section-news-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-news-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                            </div>
-                        </a>
-                        <a href="#" class="root__section-news-item">
-                            <div class="root__section-news-item-media">
-                                <img src="https://edu.viettel.vn/upload/64504/20190705/grab51d70120209_hanthienhai47.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-news-item-contet">
-                                <h3 class="root__section-news-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-news-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="root__section-sep"></div>
-                <div class="root__section-relics">
-                    <h2 class="root__section-title">Di tích mới cập nhật</h2>
-                    <div class="root__section-relics-list">
-                        <a href="#" class="root__section-relics-item">
-                            <div class="root__section-relics-item-media">
-                                <img src="https://photo-cms-viettimes.zadn.vn/666x374/Uploaded/2021/qjrfn/2016_03_08/87312_bwlg.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-relics-item-contet">
-                                <h3 class="root__section-relics-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-relics-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                                <div class="root__section-relics-item-ac">
-                                    <div class="root__section-relics-item-ac-date">23/12/2021</div>
-                                    <div class="root__section-relics-item-ac-btn btn">Xem</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="root__section-relics-item">
-                            <div class="root__section-relics-item-media">
-                                <img src="https://photo-cms-viettimes.zadn.vn/666x374/Uploaded/2021/qjrfn/2016_03_08/87312_bwlg.jpg" alt="" class="">
-                            </div>
-                            <div class="root__section-relics-item-contet">
-                                <h3 class="root__section-relics-item-title compact">7 nữ anh hùng kiệt xuất của lịch sử Việt Nam</h3>
-                                <p class="root__section-relics-item-desc compact">Dù những năm tháng chiến tranh đau thương đã lùi xa, những mất mát đang dần được khỏa lấp trong cuộc sống hòa bình hôm nay nhưng lịch sử Việt Nam luôn khắc ghi đóng góp to lớn của những nữ anh hùng, như Hai Bà Trưng, Nguyễn Thị Định, Võ Thị Sáu,...</p>
-                                <div class="root__section-relics-item-ac">
-                                    <div class="root__section-relics-item-ac-date">23/12/2021</div>
-                                    <div class="root__section-relics-item-ac-btn btn">Xem</div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="root__section-sep"></div>
-            </div>
         </div>
     </div>
 </body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
 <script src="./assets/js/root.js"></script>
 </html>
